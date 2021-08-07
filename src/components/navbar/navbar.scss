@@ -1,0 +1,33 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  max-height: 700px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-left: 20px;
+  background-color: inherit;
+  overflow: auto;
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+  }
+  &__item {
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 7px;
+    background-color: white;
+  }
+  &__link {
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    &:hover {
+      cursor: pointer;
+      opacity: .7;
+      transition: opacity .5s linear;
+    }
+  }
+}
